@@ -13,10 +13,13 @@ public class OrderService {
 	OrderRepo orderRepo;
 	
 	public OrderResponse getById(int id) {
+		System.out.println("sysout");
 		Order order = orderRepo.findById(id).get();
 		OrderResponse orderResponse = new OrderResponse();
 		orderResponse.setId(order.getOrderId());
 		orderResponse.setName(order.getOrderName());
+		System.out.println("sysout");
+
 		return orderResponse;
 	}
 }
