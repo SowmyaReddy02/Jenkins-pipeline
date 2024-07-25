@@ -19,10 +19,6 @@ public class OrderService {
 		orderResponse.setId(order.getOrderId());
 		orderResponse.setName(order.getOrderName());
 		System.out.println("sysout");
-		System.out.println("one");
-		System.out.println("two");
-		System.out.println("three");
-		System.out.println("four");
 
 		return orderResponse;
 	}
